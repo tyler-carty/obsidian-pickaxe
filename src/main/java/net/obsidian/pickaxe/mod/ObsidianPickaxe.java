@@ -1,7 +1,7 @@
 package net.obsidian.pickaxe.mod;
 
 import net.fabricmc.api.ModInitializer;
-import net.obsidian.pickaxe.mod.registry.ModItems;
+import net.obsidian.pickaxe.mod.item.ModItems;
 
 public class ObsidianPickaxe implements ModInitializer{
 
@@ -10,7 +10,8 @@ public class ObsidianPickaxe implements ModInitializer{
     @Override
     public void onInitialize() {
         // Loads Mod Items
-        ModItems.registerItems();
+
+        new ModItems();
     }
     
 }
